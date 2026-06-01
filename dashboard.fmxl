@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="com.akademik.DashboardController">
+
+    <top>
+        <Label text="Sistem Pengaduan Akademik UNHAS"/>
+    </top>
+
+    <left>
+        <VBox spacing="10">
+
+            <TextField
+                    fx:id="txtNama"
+                    promptText="Nama"/>
+
+            <TextField
+                    fx:id="txtNim"
+                    promptText="NIM"/>
+
+            <ComboBox
+                    fx:id="cmbKategori"/>
+
+            <TextArea
+                    fx:id="txtLaporan"/>
+
+            <Button
+                    text="Kirim"
+                    onAction="#kirim"/>
+
+            <Button
+                    text="Hapus"
+                    onAction="#hapus"/>
+
+        </VBox>
+    </left>
+
+    <center>
+
+        <TableView fx:id="table">
+
+            <columns>
+
+                <TableColumn
+                        fx:id="colNama"
+                        text="Nama"/>
+
+                <TableColumn
+                        fx:id="colNim"
+                        text="NIM"/>
+
+                <TableColumn
+                        fx:id="colKategori"
+                        text="Kategori"/>
+
+                <TableColumn
+                        fx:id="colStatus"
+                        text="Status"/>
+
+            </columns>
+
+        </TableView>
+
+    </center>
+
+</BorderPane>
