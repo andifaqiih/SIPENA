@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<VBox xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.akademik.LoginController"
+      alignment="CENTER"
+      spacing="10">
+
+    <Label text="LOGIN ADMIN"/>
+
+    <TextField
+            fx:id="txtUsername"
+            promptText="Username"/>
+
+    <PasswordField
+            fx:id="txtPassword"
+            promptText="Password"/>
+
+    <Button
+            text="Login"
+            onAction="#login"/>
+
+</VBox>
